@@ -5,6 +5,7 @@ gem "lita-xmpp", github: "jmazzi/lita-xmpp"
 gem 'lita-clever', ">=0.0.3", github: "phorque/lita-clever"
 gem 'foreman'
 gem 'capistrano'
+gem 'capistrano-foreman'
 
 # Uncomment to use the HipChat adapter
 # gem "lita-hipchat"

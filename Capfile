@@ -23,5 +23,13 @@ require 'capistrano/deploy'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
+require 'capistrano/foreman'
+
+# Default settings
+set :foreman_use_sudo, true
+set :foreman_roles, :all
+set :foreman_template, 'upstart'
+set :foreman_export_path, ->{ File.join(Dir.home, '.init') }
+
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }

@@ -1,1 +1,1 @@
-app: lita
+web: bundle exec lita

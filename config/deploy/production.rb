@@ -1,1 +1,1 @@
-server 'anthrocity.net', user: 'anthrocity', roles: %w{app}
+server 'anthrocity.net', user: 'bibifok', roles: %w{app}
