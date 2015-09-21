@@ -22,7 +22,7 @@ Lita.configure do |config|
   config.adapter.jid = ENV["ACBOT_JID"]
   config.adapter.password = ENV["ACBOT_PASSWORD"]
   config.adapter.debug = false
-  config.adapter.rooms = :all
+  config.adapter.rooms = eval(ENV["ACBOT_ROOMS"])
   config.adapter.muc_domain = ENV["ACBOT_MUCDOMAIN"]
 
   ## Example: Set options for the Redis connection.
